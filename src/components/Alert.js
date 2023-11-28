@@ -7,7 +7,7 @@ export default function Alert(props) {
     }
     return (
         props.alert && <div className="row d-flex justify-content-end">
-            <div class={`col-4 alert alert-${props.alert.type}  position-absolute`} role="alert">
+            <div className={`col-md-4 alert alert-${props.alert.type}  position-absolute`} role="alert">
                 <div className=''>
                     <strong className='fs-5'>{capitalize(props.alert.type)} : </strong>
                     <strong>{capitalize(props.alert.msg)}</strong>
